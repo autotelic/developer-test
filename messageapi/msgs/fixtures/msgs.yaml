@@ -1,0 +1,58 @@
+- model: msgs.message
+  pk: 1
+  fields:
+    text: "Knock-knock"
+    author: 'Bob'
+    utc_offset: '-700'
+    created_at: "2016-10-25T04:45:47.802339Z"
+    updated_at: "2016-10-25T04:45:47.802339Z"
+- model: msgs.message
+  pk: 2
+  fields:
+    text: "Who's there?"
+    author: 'Alice'
+    utc_offset: '-700'
+    in_reply_to: 1
+    created_at: "2016-10-25T04:55:47.802339Z"
+    updated_at: "2016-10-25T04:55:47.802339Z"
+- model: msgs.message
+  pk: 3
+  fields:
+    text: "I asked the librarian for a book on Pavlov's dog and Schrödinger's cat. She said it rang a bell, but she wasn't sure if it was on the shelf or not."
+    author: 'Alice'
+    utc_offset: '-700'
+    created_at: "2016-10-23T01:55:47.802339Z"
+    updated_at: "2016-10-23T01:55:47.802339Z"
+- model: msgs.message
+  pk: 4
+  fields:
+    text: "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way – in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only."
+    author: 'Bob'
+    created_at: "2016-10-24T03:55:47.802339Z"
+    updated_at: "2016-10-24T03:55:47.802339Z"
+- model: msgs.message
+  pk: 5
+  fields:
+    text: "How many programmers does it take to change a light bulb?"
+    author: 'Barney'
+    utc_offset: '-900'
+    created_at: "2016-10-25T05:10:51.483017Z"
+    updated_at: "2016-10-25T05:10:51.483017Z"
+- model: msgs.message
+  pk: 6
+  fields:
+    text: "I don't know"
+    author: 'Alice'
+    utc_offset: '-700'
+    in_reply_to: 5
+    created_at: "2016-10-25T05:17:51.483017Z"
+    updated_at: "2016-10-25T05:17:51.483017Z"
+- model: msgs.message
+  pk: 7
+  fields:
+    text: "None – It’s a hardware problem"
+    author: 'Barney'
+    utc_offset: '-900'
+    in_reply_to: 6
+    created_at: "2016-10-25T05:30:51.483017Z"
+    updated_at: "2016-10-25T05:30:51.483017Z"

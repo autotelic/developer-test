@@ -1,0 +1,20 @@
+{% load markdown_filter %}
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.1/github-markdown.min.css" />
+    <style>
+        .markdown-body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+    </style>
+</head>
+<body>
+  <div class="markdown-body">
+    {{ md_content|markdownify|safe }}
+  </div>
+</body>
+</html>
