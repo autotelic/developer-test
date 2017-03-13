@@ -10,4 +10,3 @@ In a fresh repo (or remove existing app):
 To remove existing app:
 
     $ heroku apps:destroy <name of app> --confirm <name of app>
-    $ git remote rm heroku
