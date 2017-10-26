@@ -1,26 +1,24 @@
 # Development skills test
 
-Given these API endpoints:
+Fork this example repo [https://github.com/stonevanzuiden/react-redux-app](https://github.com/stonevanzuiden/react-redux-app)
+
+Follow the instructions in the README. There may be a couple of bugs. Don't panic! See if you can fix them.
+
+Then, given these API endpoints:
 
   * GET /messages
   * GET /messages/{id}
   * DELETE /messages/{id}
   * POST /messages
 
-at [this url](/), build an SPA that allows the viewer to:
+at [this url](/), add these features to your forked version of the app:
 
-  * view a list of messages, displaying the message text and the date the message was posted
-  * view all details of a single message
-  * delete messages
-  * allow posting a new message
+  * viewing a list of messages with the message text and the date the message was posted
+  * viewing all details of a single message on a separate page
+  * deleting a message
+  * posting a new message
 
-The source code for the app should live in a git repository on github that can be cloned for evaluation.
+stretch goals:
 
-Please DON'T use jQuery, and DO use [React](https://facebook.github.io/react/) for the UI components.
-
-Approach the project as a professional piece of work - assume your colleagues will be working on it and maintaining it, or it
-might even be handed over to a client.
-
-Please don't spend any longer than 4 hours on the exercise - it can be evaluated and discussed from wherever you get to, and we know your time is valuable as well.
-
-Thanks!
+  * displaying a loading indicator whilst data is being fetched
+  * ordering the list of messages to show the most recent first

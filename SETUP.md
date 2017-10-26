@@ -2,10 +2,9 @@
 
 In a fresh repo (or remove existing app):
 
-    $ heroku create
-    $ git push heroku master
-    $ heroku run python manage.py loaddata msgs
-    $ heroku addons:create papertrail
+    $ heroku create <app_name> -r <remote_name>
+    $ git push <remote_name> master
+    $ heroku run python manage.py loaddata msgs -r <remote_name>
 
 To remove existing app:
 
