@@ -1,24 +1,19 @@
-# Development skills test
+# Autotelic Technical Test API
 
-Fork this example repo [https://github.com/stonevanzuiden/react-redux-app](https://github.com/stonevanzuiden/react-redux-app)
+## Requirements
 
-Follow the instructions in the README. There may be a couple of bugs. Don't panic! See if you can fix them.
+virtualenv
 
-Then, given these API endpoints:
+postgres
 
-  * GET /messages
-  * GET /messages/{id}
-  * DELETE /messages/{id}
-  * POST /messages
+pip
 
-at [this url](/), add these features to your forked version of the app:
+## Setup
 
-  * viewing a list of messages with the message text and the date the message was posted
-  * viewing all details of a single message on a separate page
-  * deleting a message
-  * posting a new message
+1) virtualenv
 
-stretch goals:
+2) pip install dependencies
 
-  * displaying a loading indicator whilst data is being fetched
-  * ordering the list of messages to show the most recent first
+3) make sure you have PG
+
+brew install postgresql
