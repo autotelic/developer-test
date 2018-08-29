@@ -5,7 +5,6 @@ ADD ./developertestapi ./developertestapi
 
 WORKDIR ./developertestapi
 
-# TODO(jkirkpatrick24): Move dependency management to bazel.
 RUN apk update \
     && apk add libpq postgresql-dev \
     && apk add build-base
