@@ -42,7 +42,13 @@ You should now be ready to create and provision the necessary resources.
 
 ## Run
 
-From the infrastructure directory:
+### Before initial run
+
+Make sure you are logged in for heroku container pushing:
+
+    $ heroku container:login
+
+Then, from the infrastructure directory:
 
 ### TODO(jkirkpatrick24): Manage these secrets with aws vault & chamber.
 You will be prompted to provide some variables when running terraform to create
