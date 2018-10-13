@@ -10,7 +10,7 @@ resource "heroku_app" "developertest" {
 
 resource "heroku_addon" "database" {
   app        = "${heroku_app.developertest.name}"
-  plan       = "heroku-postgresql:hobby-basic"
+  plan       = "heroku-postgresql:hobby-dev"
   depends_on = ["local_file.readme"]
 
   provisioner "local-exec" {
