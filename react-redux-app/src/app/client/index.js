@@ -53,7 +53,10 @@ const ConnectedRouter = createConnectedRouter({
 
 ReactDOM.render(
   <Provider store={store}>
-    <ConnectedRouter resolver={resolver} />
+    <ConnectedRouter
+      resolver={resolver}
+      matchContext={{ store }}
+    />
   </Provider>,
   document.getElementById('root'),
 );
