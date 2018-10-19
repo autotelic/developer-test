@@ -6,8 +6,8 @@ staticfiles
 
 # terraform
 .terraform/
-terraform.tfstate
-terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
 
 # Environments
 .envrc
