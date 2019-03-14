@@ -4,7 +4,7 @@ import LinkItem from './LinkItem.react';
 function App(props) {
   return (
     <div>
-      <h1>SVZ</h1>
+      <h1>Autotelic</h1>
       <ul>
         <LinkItem to="/">
           Main
