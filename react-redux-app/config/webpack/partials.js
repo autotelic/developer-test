@@ -1,25 +1,22 @@
 import curry from 'lodash.curry';
-import {
-  mergeStringIntoConfig,
-  mergeObjectIntoConfig
-} from '../utils';
+import { mergeStringIntoConfig, mergeObjectIntoConfig } from '../utils';
 
-export const context = curry((context, config) => mergeStringIntoConfig(
-  'context', context, config
-));
+export const context = curry((context, config) =>
+  mergeStringIntoConfig('context', context, config),
+);
 
-export const entry = curry((entryPoint, config) => mergeObjectIntoConfig(
-  'entry', entryPoint, config
-));
+export const mode = curry((mode, config) =>
+  mergeStringIntoConfig('mode', mode, config),
+);
 
-export const output = curry((output, config) => mergeObjectIntoConfig(
-  'output', output, config
-))
+export const entry = curry((entryPoint, config) =>
+  mergeObjectIntoConfig('entry', entryPoint, config),
+);
 
-export const node = curry((node, config) => mergeObjectIntoConfig(
-  'node', node, config
-))
+export const output = curry((output, config) =>
+  mergeObjectIntoConfig('output', output, config),
+);
 
-export const devtool = curry((devtool, config) => mergeStringIntoConfig(
-  'devtool', devtool, config
-))
+export const devtool = curry((devtool, config) =>
+  mergeStringIntoConfig('devtool', devtool, config),
+);

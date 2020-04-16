@@ -1,6 +1,6 @@
 import React from 'react';
 
-import App from './client/components/App.react';
+import App from './components/App.react';
 
 const Foo = ({ props }) => (
   <div>foo</div>
