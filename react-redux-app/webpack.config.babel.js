@@ -13,7 +13,7 @@ const devConfig = flowRight(
     outputPath,
     outputFilename: '[name]',
     assetOutputFilename: '[name]',
-    entry: 'src/client/index.js',
+    entry: './src/index.js',
   }),
   coreDefine,
 );

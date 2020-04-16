@@ -14,11 +14,11 @@ import { Provider } from 'react-redux';
 import { combineReducers, compose, createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
-import routeConfig from '../routeConfig';
+import routeConfig from './routeConfig';
 
 const store = createStore(
   combineReducers({
-    found: foundReducer,
+    router: foundReducer,
   }),
   compose(
     createHistoryEnhancer({
@@ -33,6 +33,7 @@ const store = createStore(
 store.dispatch(FarceActions.init());
 
 const ConnectedRouter = createConnectedRouter({
+  getFound: ({ router }) => router,
   render: createRender({
     renderError: ({ error }) => (
       <div>{error.status === 404 ? 'Not found' : 'Error'}</div>
@@ -42,7 +43,8 @@ const ConnectedRouter = createConnectedRouter({
 
 ReactDOM.render(
   <Provider store={store}>
-    <ConnectedRouter resolver={resolver} matchContext={{ store }} />
+    <ConnectedRouter
+      resolver={resolver} matchContext={{ store }} />
   </Provider>,
   document.getElementById('root'),
 );

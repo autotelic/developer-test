@@ -19,6 +19,15 @@ export default function coreConfig(options) {
       chunkFilename: `${options.outputFilename}.chunk.js`,
       filename: `${options.outputFilename}.bundle.js`,
     }),
+    loader({
+      test: /\.js|\.jsx$/,
+      exclude: /(node_modules)/,
+      use: [
+        {
+          loader: 'babel-loader',
+        }
+      ],
+    }),
     plugin(new CaseSensitivePathsPlugin()),
     plugin(
       new Clean({

@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'found/lib/Link';
+import Link from 'found/Link';
 
 const LinkItem = (props) => {
   return (
