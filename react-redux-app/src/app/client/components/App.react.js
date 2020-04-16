@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import LinkItem from './LinkItem.react';
 
 function App(props) {
@@ -6,12 +6,8 @@ function App(props) {
     <div>
       <h1>Autotelic</h1>
       <ul>
-        <LinkItem to="/">
-          Main
-        </LinkItem>
-        <LinkItem to="/foo">
-          foo
-        </LinkItem>
+        <LinkItem to="/">Main</LinkItem>
+        <LinkItem to="/foo">foo</LinkItem>
       </ul>
       {props.children}
     </div>
