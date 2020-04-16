@@ -5360,9 +5360,9 @@ webpack-dev-server@^2.9.1:
     webpack-dev-middleware "^1.11.0"
     yargs "^6.6.0"
 
-webpack-partial@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/webpack-partial/-/webpack-partial-2.1.0.tgz#d2926fcec6cf1e533d0d9e2c352b2147199a967d"
+webpack-partial@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/webpack-partial/-/webpack-partial-2.2.0.tgz#a7c6b11f10d548932797432d60b367692131acc2"
   dependencies:
     lodash "^4.12.0"
 
