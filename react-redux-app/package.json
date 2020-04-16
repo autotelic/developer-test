@@ -49,7 +49,7 @@
     "html-webpack-plugin": "^2.30.1",
     "resolve-url-loader": "^2.1.0",
     "sass-loader": "^6.0.6",
-    "style-loader": "^0.18.2",
+    "style-loader": "^0.23.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-partial": "^2.1.0"
